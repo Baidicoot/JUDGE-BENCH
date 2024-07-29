@@ -114,7 +114,7 @@ def convert_data(data_file_list,
             
         datasets.append(schema)
                 
-    print(f"Number of instances in converted datasets: {len(datasets[0]["instances"])}, {len(datasets[1]["instances"])}")
+    print(f"Number of instances in converted datasets: {len(datasets[0]['instances'])}, {len(datasets[1]['instances'])}")
     
     with open(f"{output_file}_en_de.json", 'w', encoding='utf-8') as o:
         json.dump(datasets[0], o, ensure_ascii=False, indent=4)

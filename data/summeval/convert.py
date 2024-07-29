@@ -111,7 +111,7 @@ def convert_data(data_file, output_file):
         instance["annotations"]["relevance"]["individual_human_scores"].append(round(row["scores"]["relevance"]))
         schema["instances"].append(instance)
     
-    print(f"Number of instances in converted dataset: {len(schema["instances"])}")
+    print(f"Number of instances in converted dataset: {len(schema['instances'])}")
 
     with open(output_file, 'w', encoding='utf-8') as o:
         json.dump(schema, o, indent=4)

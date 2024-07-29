@@ -59,7 +59,7 @@ def convert_data(data_file_list,
             schema["instances"].append(annotation_dict)
             instances_count += 1
 
-    print(f"Number of instances in converted dataset: {len(schema["instances"])}")
+    print(f"Number of instances in converted dataset: {len(schema['instances'])}")
 
     with open(output_file, 'w', encoding='utf-8') as o:
         json.dump(schema, o, indent=4)

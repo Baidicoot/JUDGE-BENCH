@@ -70,10 +70,10 @@ def main(args):
     if args.type == "expert":
 
         orig_data = pd.read_csv(
-            "data/medical-safety/original_data/medicheck-expert.csv"
+            "original_data/medicheck-expert.csv"
         )
     else:
-        orig_data = pd.read_csv("data/medical-safety/original_data/medicheck-crowd.csv")
+        orig_data = pd.read_csv("original_data/medicheck-crowd.csv")
 
     query_annotation = CategoricalAnnotation(
         metric="query risk level",
@@ -149,7 +149,7 @@ def main(args):
         original_prompt="true",
     )
 
-    with open("data/medical-safety/data.json", "w") as file:
+    with open("data.json", "w") as file:
         file.write(dataset.model_dump_json())
 
 
