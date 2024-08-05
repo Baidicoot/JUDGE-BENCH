@@ -5,21 +5,21 @@
         {
             "metric": "Overall Quality",
             "category": "graded",
-            "prompt": "{{ instance }} Does the generated response answer the question in a well-justified manner? (1=incomprehensible and wrong, 5=clear and correct)",
+            "prompt": "{{ instance }}Does the generated response answer the question in a well-justified manner? (1=incomprehensible and wrong, 5=clear and correct)",
             "worst": 1,
             "best": 5
         },
         {
             "metric": "Coherency",
             "category": "graded",
-            "prompt": "{{ instance }} Does the whole generated response make sense? (Ie, does it sound understandable/non-contradictory/sensible, even if it fails to address the context?) - (1=sounds like nonsense, 5=easy to parse).",
+            "prompt": "{{ instance }}Does the whole generated response make sense? (Ie, does it sound understandable/non-contradictory/sensible, even if it fails to address the context?) - (1=sounds like nonsense, 5=easy to parse).",
             "worst": 1,
             "best": 5
         },
         {
             "metric": "Missing Steps",
             "category": "categorical",
-            "prompt": "{{ instance }} Is the reasoning in the generated response incomplete and lacking required information to produce the correct answer? Specifically, does this response contain steps that, if added in, would make for a well-supported chain?",
+            "prompt": "{{ instance }}Is the reasoning in the generated response incomplete and lacking required information to produce the correct answer? Specifically, does this response contain steps that, if added in, would make for a well-supported chain?",
             "labels_list": [
                 "yes",
                 "no"
@@ -28,7 +28,7 @@
         {
             "metric": "Contradiction",
             "category": "categorical",
-            "prompt": "{{ instance }} Do steps contradict each other or fail to follow a cohesive story?",
+            "prompt": "{{ instance }}Do steps contradict each other or fail to follow a cohesive story?",
             "labels_list": [
                 "yes",
                 "no"

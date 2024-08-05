@@ -5,7 +5,7 @@
         {
             "metric": "Grammar",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any faulty, unconventional, or controversial grammar usage? In other words, does the language in this step sounds unnatural?",
+            "prompt": "{{ instance }}Does this step contain any faulty, unconventional, or controversial grammar usage? In other words, does the language in this step sounds unnatural?",
             "labels_list": [
                 "yes",
                 "no"
@@ -14,7 +14,7 @@
         {
             "metric": "Factuality",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any information that contradicts the context while still largely talking about the same concepts? (Ex. Characteristics of named objects are wrong, named entities changed.)",
+            "prompt": "{{ instance }}Does this step contain any information that contradicts the context while still largely talking about the same concepts? (Ex. Characteristics of named objects are wrong, named entities changed.)",
             "labels_list": [
                 "yes",
                 "no"
@@ -23,7 +23,7 @@
         {
             "metric": "Coherency and Logic",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any logical deduction errors (Ie, makes a conclusion contradictory to previously stated clauses, including clauses within this step itself; makes a conclusion while not having enough support to make the conclusion)",
+            "prompt": "{{ instance }}Does this step contain any logical deduction errors (Ie, makes a conclusion contradictory to previously stated clauses, including clauses within this step itself; makes a conclusion while not having enough support to make the conclusion)",
             "labels_list": [
                 "yes",
                 "no"
@@ -32,7 +32,7 @@
         {
             "metric": "Final Answer",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain a final step with an incorrect final answer? (If an explicit 'yes/no' is not provided, an exact match of the correct answer with respect to the question in the context must be given.)",
+            "prompt": "{{ instance }}Does this step contain a final step with an incorrect final answer? (If an explicit 'yes/no' is not provided, an exact match of the correct answer with respect to the question in the context must be given.)",
             "labels_list": [
                 "yes",
                 "no"
@@ -41,7 +41,7 @@
         {
             "metric": "Hallucination",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any information not provided in the problem statement that is irrelevant or wrong?",
+            "prompt": "{{ instance }}Does this step contain any information not provided in the problem statement that is irrelevant or wrong?",
             "labels_list": [
                 "yes",
                 "no"
@@ -50,7 +50,7 @@
         {
             "metric": "Redundancy",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any information not required to answer the question asked despite being factual and consistent with the context?",
+            "prompt": "{{ instance }}Does this step contain any information not required to answer the question asked despite being factual and consistent with the context?",
             "labels_list": [
                 "yes",
                 "no"
@@ -59,7 +59,7 @@
         {
             "metric": "Repetition",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any information, possibly paraphrased, already mentioned in previous step (and thus could be dropped without impacting correctness)?",
+            "prompt": "{{ instance }}Does this step contain any information, possibly paraphrased, already mentioned in previous step (and thus could be dropped without impacting correctness)?",
             "labels_list": [
                 "yes",
                 "no"
@@ -68,7 +68,7 @@
         {
             "metric": "Commonsense",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any errors in relation to general knowledge about the world (i.e. how to compute velocity, how many inches in one foot, etc) not explicitly provided in the context?",
+            "prompt": "{{ instance }}Does this step contain any errors in relation to general knowledge about the world (i.e. how to compute velocity, how many inches in one foot, etc) not explicitly provided in the context?",
             "labels_list": [
                 "yes",
                 "no"
@@ -77,7 +77,7 @@
         {
             "metric": "Arithmetic",
             "category": "categorical",
-            "prompt": "{{ instance }} Does this step contain any math equation errors? Note that you should consider only current step in isolation, rather than issues propagated from prior steps.",
+            "prompt": "{{ instance }}Does this step contain any math equation errors? Note that you should consider only current step in isolation, rather than issues propagated from prior steps.",
             "labels_list": [
                 "yes",
                 "no"

@@ -138,10 +138,10 @@ if __name__ == '__main__':
         data_dict = json.load(data_file)
     if args.prompt == "long":
         ret_dict = convert_dataset_full(data_dict)
-        with open(f'persona_chat_long.json', 'w') as outfile:
+        with open(f'persona_chat_long.json', 'w+') as outfile:
             json.dump(ret_dict, outfile)
     
     elif args.prompt == "short":
         ret_dict = convert_dataset_reduced(data_dict)
-        with open(f'persona_chat_short.json', 'w') as outfile:
+        with open(f'persona_chat_short.json', 'w+') as outfile:
             json.dump(ret_dict, outfile)

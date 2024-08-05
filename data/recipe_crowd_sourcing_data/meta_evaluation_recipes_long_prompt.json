@@ -3,37 +3,37 @@
     "dataset_url": "https://github.com/interactive-cookbook/recipe-generation",
     "annotations": [
         {
-            "metric": "grammar",
+            "category": "grammar",
             "worst": 1,
             "best": 6,
             "prompt": "In this experiment you will be presented one cooking recipe at a time. Below the recipe you will be shown statements about the recipe text and you will be asked to answer to what degree you agree with those statements.\n\n{{ instance }}\n\nPlease indicate for each of the statements below to what extent you agree with the statement on a scale from 1 to 6.\n\nStatement: The recipe text is grammatically correct.\n\n"
         },
         {
-            "metric": "fluency",
+            "category": "fluency",
             "worst": 1,
             "best": 6,
             "prompt": "In this experiment you will be presented one cooking recipe at a time. Below the recipe you will be shown statements about the recipe text and you will be asked to answer to what degree you agree with those statements.\n\n{{ instance }}\n\nPlease indicate for each of the statements below to what extent you agree with the statement on a scale from 1 to 6.\n\nStatement: The recipe text reads smoothly.\n\n"
         },
         {
-            "metric": "verbosity",
+            "category": "verbosity",
             "worst": 1,
             "best": 6,
             "prompt": "In this experiment you will be presented one cooking recipe at a time. Below the recipe you will be shown statements about the recipe text and you will be asked to answer to what degree you agree with those statements.\n\n{{ instance }}\n\nPlease indicate for each of the statements below to what extent you agree with the statement on a scale from 1 to 6.\n\nStatement: The recipe explains the steps concisely and does not repeat information unnecessarily.\n\n"
         },
         {
-            "metric": "structure",
+            "category": "structure",
             "worst": 1,
             "best": 6,
             "prompt": "In this experiment you will be presented one cooking recipe at a time. Below the recipe you will be shown statements about the recipe text and you will be asked to answer to what degree you agree with those statements.\n\n{{ instance }}\n\nPlease indicate for each of the statements below to what extent you agree with the statement on a scale from 1 to 6.\n\nStatement: The recipe explains the steps in a helpful order.\n\n"
         },
         {
-            "metric": "success",
+            "category": "success",
             "worst": 1,
             "best": 6,
             "prompt": "In this experiment you will be presented one cooking recipe at a time. Below the recipe you will be shown statements about the recipe text and you will be asked to answer to what degree you agree with those statements.\n\n{{ instance }}\n\nPlease indicate for each of the statements below to what extent you agree with the statement on a scale from 1 to 6.\n\nStatement: In combination with a list of the required ingredients, the recipe would enable me to successfully prepare the dish.\n\n"
         },
         {
-            "metric": "overall",
+            "category": "overall",
             "worst": 1,
             "best": 6,
             "prompt": "In this experiment you will be presented one cooking recipe at a time. Below the recipe you will be shown statements about the recipe text and you will be asked to answer to what degree you agree with those statements.\n\n{{ instance }}\n\nPlease indicate for each of the statements below to what extent you agree with the statement on a scale from 1 to 6.\n\nStatement: Overall, the recipe is well written.\n\n"
